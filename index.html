@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch App Download</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            color: #333;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            scroll-behavior: smooth;
+        }
+        h1 {
+            font-size: 3em;
+            margin: 0;
+            color: #fff;
+        }
+        p {
+            font-size: 1.2em;
+            color: #fff;
+            margin: 10px 0;
+        }
+        .container {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            margin: 20px;
+        }
+        .btn-download {
+            display: inline-block;
+            font-size: 1.2em;
+            color: #fff;
+            background-color: #28a745;
+            padding: 15px 25px;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: background-color 0.3s ease;
+        }
+        .btn-download:hover {
+            background-color: #218838;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #fff;
+        }
+        .section {
+            padding: 50px 20px;
+            margin: 20px 0;
+            color: #fff;
+        }
+        .about, .features {
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            padding: 20px;
+            animation: fadeIn 2s ease-out;
+        }
+        .features {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .feature-item {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px;
+            flex: 1 1 200px;
+            animation: slideUp 1s ease-out;
+        }
+        .feature-item img {
+            width: 50px;
+            height: 50px;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideUp {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Stopwatch App</h1>
+        <p>Download our amazing Stopwatch application with a single click!</p>
+        <a href="abc.zip" class="btn-download" download>Download Now</a>
+    </div>
+
+    <div class="section about">
+        <h2>About the App</h2>
+        <p>Our Stopwatch app is designed to be simple yet powerful. Track your time with precision and ease using a user-friendly interface.</p>
+    </div>
+
+    <div class="section features">
+        <div class="feature-item">
+            <img src="abc.ico" alt="Feature 1">
+            <h3>Easy to Use</h3>
+            <p>Intuitive controls and clear display make it easy to manage your time.</p>
+        </div>
+        <div class="feature-item">
+            <img src="abc.ico" alt="Feature 2">
+            <h3>Customizable</h3>
+            <p>Personalize your stopwatch with various themes and settings.</p>
+        </div>
+        <div class="feature-item">
+            <img src="abc.ico" alt="Feature 3">
+            <h3>Accurate</h3>
+            <p>Precision timing for any activity, whether it's workouts or cooking.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Stopwatch App. All rights reserved.</p>
+    </div>
+</body>
+</html>
